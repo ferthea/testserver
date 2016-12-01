@@ -10,10 +10,17 @@
     "type": "git",
     "url": "git+https://github.com/ferthea/testserver.git"
   },
+  "keywords": [
+    "example",
+    "heroku"
+  ],
   "author": "fernando",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ferthea/testserver/issues"
   },
-  "homepage": "https://github.com/ferthea/testserver#readme"
+  "homepage": "https://github.com/ferthea/testserver#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
 }
