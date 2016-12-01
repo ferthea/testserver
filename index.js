@@ -3,8 +3,8 @@ var app = express();
 
 app.get('/', function(req, res){
   var date = new Date();
-  //var hora = date.getHours() +":"+date.getMinutes() +":"+date.getSeconds();
-  res.send(date);
+  var hora = date.getHours() +":"+date.getMinutes() +":"+date.getSeconds();
+  res.send(hora);
 })
 
 app.listen(process.env.PORT, function(){
