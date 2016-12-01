@@ -1,0 +1,19 @@
+{
+  "name": "test-server",
+  "version": "1.0.0",
+  "description": "test express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ferthea/testserver.git"
+  },
+  "author": "fernando",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ferthea/testserver/issues"
+  },
+  "homepage": "https://github.com/ferthea/testserver#readme"
+}
