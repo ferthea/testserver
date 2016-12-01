@@ -1,12 +1,17 @@
 var express = require('express');
 var app = express();
 
+app.use(express.static('public'));
+
 app.get('/', function(req, res){
-  var date = new Date();
-  var hora = date.getHours() +":"+date.getMinutes() +":"+date.getSeconds();
-  res.send(hora);
+  res.sendFile('index.html');
 })
 
-app.listen(process.env.PORT, function(){
+app.get('*', function(req, res){
+  res.sendStatus(404);
+})
+
+
+app.listen(process.env.PORT || 8080, function(){
   console.log("Servidor corriendo");
 })
