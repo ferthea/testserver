@@ -1,8 +1,8 @@
-function Articulo(titulo, contenido){
+function Articulo(titulo, contenido, id){
   this.titulo = titulo;
   this.contenido = contenido;
-  this.id;
+  this.id = id;
   this.render = function(){
-    return "<article><h3>"+titulo+"</h3><p>"+contenido+"</p></article>"
+    return `<article><h3><a href="noticia`+id+`.html">`+titulo+`</h3><p>`+contenido+`</p></article>`;
   }
 }

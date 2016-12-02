@@ -3,12 +3,16 @@ var app = express();
 
 app.use(express.static('public'));
 
+app.use(function (req, res, next) {
+  res.status(404).send("Error 404 - Página no encontrada");
+})
+
 app.get('/', function(req, res){
   res.sendFile('index.html');
 })
 
 app.get('*', function(req, res){
-  res.sendStatus(404);
+  res.sendStatus(404)
 })
 
 

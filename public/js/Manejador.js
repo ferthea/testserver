@@ -1,16 +1,11 @@
 function Manejador(){
   var articulos = new Array();
   this.load = function(){
-    articulos.push(new Articulo("Cayo avión de Chapecoense", "Confirmaron sólo seis sobrevivientes de las 81 personas a bordo. El presidente Santos dijo que hay dos que están graves. El vuelo iba a Medellín, pero se perdió contacto a 50 kilómetros. Los brasileños debían jugar la final de la Copa Sudamericana. "));
-    articulos.push(new Articulo("Pidieron el embargo de los Kirchner", "Es en el marco de la causa Hotesur. Se trata de los cedidos por la ex Presidenta a sus hijos."));
-    articulos.push(new Articulo("Anibal Fernandez faltó a una audiencia con Carrio", "El ex jefe de Gabinete había iniciado una causa contra la diputada de Cambiemos, pero no se presentó a una instancia de apertura a prueba y absolución"));
-    articulos.push(new Articulo("Noticia 4", "Descripcion noticia 4"));
-    articulos.push(new Articulo("Noticia 5", "Descripcion noticia 5"));
-    articulos.push(new Articulo("Noticia 6", "Descripcion noticia 6"));
-    articulos.push(new Articulo("Noticia 7", "Descripcion noticia 7"));
-    articulos.push(new Articulo("Noticia 8", "Descripcion noticia 8"));
-    articulos.push(new Articulo("Noticia 9", "Descripcion noticia 9"));
-    articulos.push(new Articulo("Noticia 10", "Descripcion noticia 10"));
+    articulos.push(new Articulo("Cayo avión de Chapecoense", "Confirmaron sólo seis sobrevivientes de las 81 personas a bordo. El presidente Santos dijo que hay dos que están graves. El vuelo iba a Medellín, pero se perdió contacto a 50 kilómetros. Los brasileños debían jugar la final de la Copa Sudamericana. ", 1));
+    articulos.push(new Articulo("Pidieron el embargo de los Kirchner", "Es en el marco de la causa Hotesur. Se trata de los cedidos por la ex Presidenta a sus hijos.", 2));
+    articulos.push(new Articulo("Anibal Fernandez faltó a una audiencia con Carrio", "El ex jefe de Gabinete había iniciado una causa contra la diputada de Cambiemos, pero no se presentó a una instancia de apertura a prueba y absolución", 3));
+    articulos.push(new Articulo("Las prepagas aumentan un 6% desde enero", "Las cuotas de las empresas de medicina privada tuvieron un aumento acumulado del 42,6%.", 4));
+    articulos.push(new Articulo("Se confirmó la suspensión de Venezuela del Mercosur", "Es por no cumplir con las normas del bloque; hoy se formalizaría la medida", 5));
   }
 
   this.render = function(div, cantidad){
