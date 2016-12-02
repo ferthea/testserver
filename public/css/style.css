@@ -161,10 +161,15 @@ article h3{
 
 article p{
 	padding: 5px;
+	margin-top: 20px;
 }
 
 #noticias article:nth-child(odd){
 	background-color: rgba(86, 82, 82, 0.15);
+}
+
+#noticias article{
+	padding: 20px;
 }
 
 #paginador{
